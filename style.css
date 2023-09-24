@@ -5,11 +5,11 @@
 html{
     scroll-behavior: smooth;
 }
-
-    background: rgba(0, 0, 0,0.5) url('../image/bg7.jpg');
+   .background{
+    background: rgba(0, 0, 0,0.5) url('image/bg7.jpg');
     background-size: cover;
     background-blend-mode: darken;
-
+   }
 
 .logo{
     font-family: 'Anton', sans-serif;
