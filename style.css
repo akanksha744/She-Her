@@ -263,7 +263,7 @@ html{
     margin: 5px 3px;
 }
 
-@media  screen and (min-width:760px) and (max-width:1024px){
+@media only screen and (max-width:900px){
     .nav-list{
         flex-direction: column;
         margin-left: 0%;
@@ -288,65 +288,17 @@ html{
         flex-direction: column-reverse;
         max-width: 100%;
     }
+    
     .sec3{
         flex-direction: column-reverse;
         max-width: 100%;
     }
-    .sec3{
-        flex-direction: column-reverse;
-        max-width: 100%;
+     .fluidimage{
+        max-width: 40%;
+        max-height: 40%;
+        margin-left: 25%;
     }
-    .sec4{
-        flex-direction: column-reverse;
-        max-width: 100%;
-    }
-    .paras{
-        padding: 0px;
-    }
-    .burger{
-        display: block;
-    }
-    .h-nav-resp{
-        height: 72px;
-    }
-    .v-class-resp{
-        opacity: 0;
-    }
-}
 
-@media  screen and  (max-width:759px){
-    .nav-list{
-        flex-direction: column;
-        margin-left: 0%;
-    }
-    .logo{
-        flex-direction: column;
-    }
-    .navbar{
-        flex-direction: column;
-        transition: all 0.7s ease-out;
-        height: 360px;
-        position: sticky;
-    }
-    .rightnav{
-        text-align: center;
-    }
-    .box-main{
-        flex-direction: column-reverse;
-        max-width: 100%;
-    }
-    .sec2{
-        flex-direction: column-reverse;
-        max-width: 100%;
-    }
-    .sec3{
-        flex-direction: column-reverse;
-        max-width: 100%;
-    }
-    .sec3{
-        flex-direction: column-reverse;
-        max-width: 100%;
-    }
     .sec4{
         flex-direction: column-reverse;
         max-width: 100%;
