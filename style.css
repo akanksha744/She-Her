@@ -5,24 +5,40 @@
 html{
     scroll-behavior: smooth;
 }
-   .background{
-    background: rgba(0, 0, 0,0.5) url('image/bg7.jpg');
+.background{
+    background: rgba(0, 0, 0,0.5) url('../image/bg7.jpg');
     background-size: cover;
     background-blend-mode: darken;
-   }
+}
 
+section{
+    padding: 10px 5px;
+}
+.active{
+    color: pink;
+}
+.vl{
+    border-left: 2px solid pink;
+    height: 20px;
+    margin: 0 0.25rem;
+}
+.logo h3{
+    font-size: 1rem;
+    margin-left: 0.5rem;
+    font-weight: lighter;
+    color: pink;
+}
 .logo{
     font-family: 'Anton', sans-serif;
    font-family: 'Croissant One', cursive;
    font-family: 'Pacifico', cursive;
    width: 30%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
      justify-content: center; 
      align-items: center; 
-    color: palevioletred;
     font-size: 17px;
-    margin-top: 1%;
+    margin-top: 0%;
    /* width: 20%;*/
     /*display: flex;*/
    /* justify-content: center;*/
@@ -38,8 +54,6 @@ html{
 .logo img{
     display: flex;
     width: 20%;
-    border:3px solid white;
-
 }
 /*header{
     position: sticky;
@@ -47,10 +61,14 @@ html{
   z-index: 100;
 
 }*/
+.navbar-bg{
+    background-color: #58588f;
+}
 .navbar{
   position: fixed;
   width: 100%;
   display: flex;
+  padding: 2px;
   justify-content:center; 
   align-items: center;
     
@@ -65,8 +83,7 @@ html{
 }
 .nav-list li{
      list-style: none; 
-     padding: 20px;  
-
+     padding: 0px 20px;  
 }
 
 .nav-list li a{
@@ -76,7 +93,7 @@ html{
 }
 .nav-list li a:hover{
     text-decoration: none;
-    color:aqua;
+    color: pink;
 }    
 
 .rightnav{
@@ -85,12 +102,11 @@ html{
     padding: 0 20px;
 }
 #search{
-    padding: 1px;
+    padding: 0px;
     font-size: 15px;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 9px;
     background: none;
-    margin-top: 5%;
 }
 
 .firstsection{
@@ -130,7 +146,7 @@ html{
 .btn{
     padding: 3px 5px;
     margin: 5px 2px;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 7px;
     background: none;
     color:white ;
@@ -149,20 +165,27 @@ html{
     margin: auto;
     margin-left: 2%;
     margin-right:2%;
-    
 }
 .paras{
     padding: 0 60px;
 }
 .section2{
     background-color: rgb(212, 196, 210);
+    
+}
+.sectiontag2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .fluidimage{
     max-width: 30rem;
     max-height: 30rem;
     margin-top: 4%;
     margin-bottom: 2%;
+   
 }
+
 .section3{
     background-color:rgba(125, 117, 117, 0.458);
     padding-bottom: 2%;
@@ -179,6 +202,7 @@ html{
     
 }
 .sectiontag3{
+    margin-top:0.5% ;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -200,16 +224,24 @@ html{
     flex-direction: row-reverse;
 }
 .section5{
-    background-color: rgb(191, 214, 207);
     
-    
+    background-color: rgb(191, 214, 207); 
 }
-.contact{
+.section5 p{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+#con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.5%;
+}
+/*.contact{
     height: 800px;
-}
+}*/
 .text-center{
     padding-top: 10px;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -219,23 +251,20 @@ html{
     margin: 10px auto;
 }
 .form-input{
-    margin:1%;
-    padding: 2px 3px;
+    margin: 1% 0%;
+    padding: 5px 2px;
     width: 100%;
-    font-size: 15px;
+    font-size: 12.5px;
     border: 2px solid grey;
     border-radius: 6px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .btn-end{
+    display: flex;
     color: black;
     border: 2px solid black;
     cursor: pointer;
-    margin: 0px 9px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 50%;
+    margin: auto;
 }
 .text-footer{
     display: flex;
@@ -245,6 +274,7 @@ html{
     color: white;
 }
 .bk{
+    margin-top: 5%;
     background: rgba(0, 0, 0, 0.7);
     background-size: cover;
     background-blend-mode: darken;
@@ -262,14 +292,27 @@ html{
     height: 4px;
     margin: 5px 3px;
 }
+.hola{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
-@media only screen and (max-width:900px){
+@media only screen and  (max-width:995px){
+    .navbar{
+        background: none;
+    }
     .nav-list{
         flex-direction: column;
         margin-left: 0%;
+        gap: 1rem;
+        padding: 1rem;
+    }
+    .text-big{
+        font-size: 1.75rem;
     }
     .logo{
-        flex-direction: column;
+        flex-direction: row;
     }
     .navbar{
         flex-direction: column;
@@ -280,6 +323,10 @@ html{
     .rightnav{
         text-align: center;
     }
+    .firstsection{
+        height: 60%;
+    }
+  
     .box-main{
         flex-direction: column-reverse;
         max-width: 100%;
@@ -288,21 +335,32 @@ html{
         flex-direction: column-reverse;
         max-width: 100%;
     }
-    
+    .sectiontag2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
     .sec3{
         flex-direction: column-reverse;
         max-width: 100%;
     }
-     .fluidimage{
+    .fluidimage{
         max-width: 40%;
         max-height: 40%;
         margin-left: 25%;
     }
-
     .sec4{
         flex-direction: column-reverse;
         max-width: 100%;
     }
+    .sectiontag4{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+   
     .paras{
         padding: 0px;
     }
